@@ -64,4 +64,18 @@ function likesBaseball() {
   }
 }
 likesBaseball();
-console.log('He likes baseball .. ' + baseballTeam);
+
+
+var hasCats = prompt('Question 4: Do I have cats?').toLowerCase();
+function likesCats() {
+
+  if (hasCats === 'y' || hasCats === 'yes') {
+    alert('Correct! I have two cats. Blanco and Elwood are their names.');
+    console.log('Q4: Do I have cats? ' + hasCats + ' is correct.');
+    correctGuesses++;
+  } else {
+    alert('Incorrect! There are indeed cats, and they are just fantastic.');
+    //console.log('Q4: Do I have cats? ' + hasCats + ' is incorrect.');
+  }
+}
+likesCats();
