@@ -124,3 +124,29 @@ function reallyLikesCats() {
   }
 }
 reallyLikesCats();
+
+var neighborhoodArray = ['wallingford' , 'capitol hill' , 'ravenna' , 'university district' , 'eastlake' , 'roosevelt'];
+var countNeighborhood = 0;
+function likesHood() {
+  while (countNeighborhood < 6) {
+    var whatNeighborhood = prompt('Question 7: Guess a neighborhood in Seattle where I have lived. Therea are six correct answers.').toLowerCase();
+
+    if (whatNeighborhood === neighborhoodArray[0] || whatNeighborhood === neighborhoodArray[1] || whatNeighborhood === neighborhoodArray[2] || whatNeighborhood === neighborhoodArray[3] || whatNeighborhood === neighborhoodArray[4] || whatNeighborhood === neighborhoodArray[5] || whatNeighborhood === neighborhoodArray[6]) {
+      console.log(whatNeighborhood);
+      alert('That is correct! I did live in ' + whatNeighborhood + '!');
+      correctGuesses++;
+      break;
+    }
+    else {
+      countNeighborhood++;
+      alert('Guess again!');
+    }
+    if (countNeighborhood === 6) {
+      alert('Sorry, but you guessed wrong! The correct answers are Wallingford, Capitol Hill, Ravenna, University District, Eastlake, and Roosevelt.');
+      break;
+    }
+  }
+}
+likesHood();
+alert('Thanks for playing! Your score was ' + correctGuesses + ' which is pretty good!');
+
