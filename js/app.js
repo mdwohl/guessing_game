@@ -95,3 +95,32 @@ function likesDawg() {
   }
 }
 likesDawg();
+
+//var catNumberQuestion = prompt('Question 6: How many cats do I have? You have four guesses.');
+// Question no 6 while loop
+
+var count = 0;
+function reallyLikesCats() {
+
+  while (count < 4) {
+    var catNumberQuestion = prompt('Question 6: How many cats do I have? You have four guesses.');
+    catNumberQuestion = parseInt(catNumberQuestion);
+    if (catNumberQuestion === 2) {
+      alert('Correct! Blanco and Elwood are my two cats.');
+      correctGuesses++;
+      break;
+    }
+    else if (catNumberQuestion < 2) {
+      count++;
+      alert('Not quite. Remember, cats are like martinis. One is too few...');
+    }
+    else if (catNumberQuestion > 2) {
+      count++;
+      alert('That is too many cats! For me at least.');
+    }
+    if (count === 4) {
+      alert('Well, ' + userName + ' thanks for playing! I have two cats, by the way!');
+    }
+  }
+}
+reallyLikesCats();
