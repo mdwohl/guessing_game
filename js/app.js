@@ -45,3 +45,23 @@ function doesPlayGuitar() {
   console.log('Mike does play guitar...' + playsGuitar);
 }
 doesPlayGuitar();
+
+// create a function whereMikeBorn
+// wrap teh if ... else statement within function
+// call the Function
+
+var baseballTeam = prompt('Question 3: Do I follow the Seattle Mariners?').toLowerCase();
+
+function likesBaseball() {
+
+  if (baseballTeam === 'y' || baseballTeam === 'yes') {
+    alert('You got it! Go Mariners!');
+    console.log('Q3: Do I follow the Seattle Mariners? ' + baseballTeam + ' is correct.');
+    correctGuesses++;
+  } else {
+    alert('Incorrect! Even though they have not made the playoffs in 20 years, I still root for the Mariners...unless they play the Cubs.');
+    //console.log('Q3: Do I follow the Seattle Mariners? ' + baseballTeam + ' is incorrect.');
+  }
+}
+likesBaseball();
+console.log('He likes baseball .. ' + baseballTeam);
