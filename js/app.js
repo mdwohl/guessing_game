@@ -27,3 +27,21 @@ function getMikesBirthPlace() {
 getMikesBirthPlace();
 console.log('Mike was born in ' + whereMikeBorn);
 
+// create a function whereMikeBorn
+// wrap teh if ... else statement within function
+// call the Function
+
+function doesPlayGuitar() {
+  var playsGuitar = prompt('Question 2: do I play the guitar?').toLowerCase();
+
+  if (playsGuitar === 'y' || playsGuitar === 'yes') {
+    alert('That is correct! I started playing almost 25 years ago.');
+    console.log('Q2: Do I play the guitar? ' + playsGuitar + ' is correct.');
+    correctGuesses++;
+  } else {
+    alert('And you thought you knew me! Of course I play the guitar.');
+    //console.log('Q2: Do I play the guitar? ' + playsGuitar + ' is incorrect.');
+  } 
+  console.log('Mike does play guitar...' + playsGuitar);
+}
+doesPlayGuitar();
