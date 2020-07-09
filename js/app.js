@@ -79,3 +79,19 @@ function likesCats() {
   }
 }
 likesCats();
+
+
+var isDawg = prompt('Question 5: Did I go to University of Washington?').toLowerCase();
+
+function likesDawg() {
+
+  if (isDawg === 'y' || isDawg === 'yes') {
+    alert('Correct! Go Dawgs!');
+    console.log('Q5: Did I go to UW? ' + isDawg + ' is correct.');
+    correctGuesses++;
+  } else {
+    alert('Incorrect! I went to UW, and look great in purple.');
+    //console.log('Q5: Did I go to UW? ' + isDawg + ' is incorrect.');
+  }
+}
+likesDawg();
